@@ -54,8 +54,6 @@ let visitasItems = 0;
 
 app.get('/items', (request, response) => {
     visitasItems ++;
-    fs.writeFileSync('./visitasItems.txt', visitasItems.toString());
-    
     const getItems = {
         items: [],
         cantidad : productos.length,
@@ -79,7 +77,6 @@ app.get('/item-random', (request, response) => {
   };
     let item = productosDesdeTXT[(numeroRandom(0,productosDesdeTXT.length-1))]
     visitasItemRandom ++;
-    fs.writeFileSync('./visitasItemRandom.txt', visitasItemRandom.toString());
     console.log(request.query);
 
     response.json({
@@ -90,11 +87,12 @@ app.get('/item-random', (request, response) => {
 
 app.get('/visitas', (request, response) => {
     let visitas = {
-        "items": JSON.parse(fs.readFileSync('./visitasItemRandom.txt')),
-        "item": JSON.parse(fs.readFileSync('./visitasItems.txt'))
+        "items": visitasItems,
+        "item": visitasItemRandom
     }
     console.log(request.query);  
         response.json({
            visitas
         });        
     });
+
