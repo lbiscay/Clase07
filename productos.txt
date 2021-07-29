@@ -1,0 +1,32 @@
+[
+ {
+  "title": "Taza",
+  "price": 150,
+  "thumbnail": "https://www.dalevida.net/1993-large_default/taza-magica.jpg",
+  "id": 1
+ },
+ {
+  "title": "Vaso",
+  "price": 100,
+  "thumbnail": "https://www.eneyememayorista.com.ar/6926-large_default/vaso-facetado-trago-bajo-blanco-330cc-art-tva-047.jpg",
+  "id": 2
+ },
+ {
+  "title": "Plato",
+  "price": 200,
+  "thumbnail": "https://www.ikea.com/mx/es/images/elementos/oftast-plato-blanco__0713530_pe729595_s5.jpg?f=s",
+  "id": 3
+ },
+ {
+  "title": "Cuchillo",
+  "price": 175,
+  "thumbnail": "https://www.trentogourmet.com.ar/wp-content/uploads/trento-cuchillo-gourmet-19-6-cm-131453-01.jpg",
+  "id": 4
+ },
+ {
+  "title": "Tenedor",
+  "price": 125,
+  "thumbnail": "https://hendel-r7d8odghj1.stackpathdns.com/media/catalog/product/cache/0c3e9ac8430b5a3e77d1544ae1698a10/3/2/32290.jpg",
+  "id": 5
+ }
+]
